@@ -17,10 +17,14 @@ PLEASE COMPLETLY READ THE FOLLOWING INSTRUCTIONS!
 10. additional customization can be done within this file, such as resolution changing and fps, however they are not required.
 11. eject the TUFTY drive and open the video_player app, the video should start playing
 
-Current version(1.1):
+Current Version(1.2):
+Now the text "Paused" and "Rewind" will show when doing the corresponding action.
+When rewinding you now have to hold down C, and therefore you can choose how much to rewind.
+
+Previous version(1.1):
 You can now press B to pause, A to unpause, and C to restart video
 
-Previous version(1.0):
+Old version(1.0):
 It now works but you can't pause the video. You can only have one video at a time.
 # Timer
 This is a basic tool which has a stopwatch and timer.
