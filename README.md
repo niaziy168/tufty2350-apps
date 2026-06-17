@@ -5,17 +5,20 @@ Any apps I make for the tufty 2350 will be placed in here.
 This allows you to play videos on your Tufty. 
 PLEASE COMPLETLY READ THE FOLLOWING INSTRUCTIONS!
 
-1. First, record your video and convert it to png images at https://ezgif.com/video-to-png
-2. select the resolution to be below 320x240
-3. Download them as a .zip file
-4. extract all, then upload the unnzipped folder to /apps/video_player/
-5. rename the folder you just moved to "images"
-6. confirm all files are named "ezgif-frame-001", "ezgif-frame-002", etc
-7. go back to /apps/video_player
-8. open __init__.py
-9. at line 9, change image_count to equal the number of images in your video
-10. additional customization can be done within this file, such as resolution changing and fps, however they are not required.
-11. eject the TUFTY drive and open the video_player app, the video should start playing
+1. First, record your video and if you want shrink the resolution to 160x 120 or below at
+   https://www.onlineconverter.com/resize-video (this will greatly upgrade fps)
+3. Convert your video to png images at https://ezgif.com/video-to-png
+4. select the resolution to be below 320x240
+5. Download them as a .zip file
+6. extract all, then upload the unnzipped folder to /apps/video_player/
+7. rename the folder you just moved to "images"
+8. confirm all files are named "ezgif-frame-001", "ezgif-frame-002", etc
+9. go back to /apps/video_player
+10. open __init__.py
+11. at line 9, change image_count to equal the number of images in your video
+12. if your video is below 160 x 120, change the line "res = "high"" to "res = "low""
+13. additional customization can be done within this file, however they are not required.
+14. eject the TUFTY drive and open the video_player app, the video should start playing
 
 Current Version(1.2):
 Now the text "Paused" and "Rewind" will show when doing the corresponding action.
