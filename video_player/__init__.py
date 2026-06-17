@@ -1,16 +1,27 @@
 #upload your images to the "images" folder, they must be named ezgif-frame001.png, etc
 #convert your video to this format at https://ezgif.com/video-to-png/
 #currently the images can be up to 320 x 240 resolution
+#to reduce resolution below 320, go to https://www.onlineconverter.com/resize-video BEFORE uploading video to ezgif
+
 import time
 
-badge.mode(HIRES)#change this to lores if your video is less than 160x120, to get better fps
+res = 'low'#change this to low if your video is less than 160x120, to get WAY better fps
+
+if res == 'high':
+    badge.mode(HIRES)
+else:
+    badge.mode(LORES)
 
 image_number = 1
-image_count = 45 #change this to how many images are in your video
+image_count = 25 #change this to how many images are in your video
 pause = 0
 blinkeffectcounter = 0
 
-ignore_font = rom_font.ignore
+if res == 'high':
+    font = rom_font.ignore
+else:
+    font = rom_font.nope
+
 image = image.load(f"/system/apps/video_player/images/ezgif-frame-{image_number:03d}.png")
 
 def update():
@@ -41,12 +52,15 @@ def update():
     if badge.pressed(BUTTON_B):
         pause = 1
         screen.pen = color.white
-        screen.font = ignore_font
+        screen.font = font
         screen.text('PAUSED', 10, 10)
     
     if badge.held(BUTTON_C):
         image_number = image_number - 5
-        screen.text('REWIND', 220, 10)
+        if res == 'high':
+            screen.text('REWIND', 220, 10)
+        else:
+            screen.text('REWIND', 105, 10)
         if image_number < 1:
             image_number = 1
     
