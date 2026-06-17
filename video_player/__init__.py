@@ -5,7 +5,7 @@
 
 import time
 
-res = 'low'#change this to low if your video is less than 160x120, to get WAY better fps
+res = 'high'#change this to low if your video is less than 160x120, to get WAY better fps
 
 if res == 'high':
     badge.mode(HIRES)
