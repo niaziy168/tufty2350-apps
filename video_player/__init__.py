@@ -8,14 +8,14 @@ badge.mode(HIRES)#change this to lores if your video is less than 160x120, to ge
 image_number = 1
 image_count = 25 #change this to how many images are in your video
 
-image = image.load(f"/system/apps/animationplay/images/ezgif-frame-{image_number:03d}.png")
+image = image.load(f"/system/apps/video_player/images/ezgif-frame-{image_number:03d}.png")
 
 def update():
     global image_number, image, image_count
     
 
     # Try to load the current image
-    image = image.load(f"/system/apps/animationplay/images/ezgif-frame-{image_number:03d}.png")
+    image = image.load(f"/system/apps/video_player/images/ezgif-frame-{image_number:03d}.png")
         
     screen.blit(image, vec2(0, 0))
         
