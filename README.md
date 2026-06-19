@@ -4,11 +4,11 @@ Any apps I make for the tufty 2350 will be placed in here.
 # Paint
 A basic drawing app.
 Controls:
-A/C/U/D to move cursor
-B to draw
-To erase, just don't press B
-Hold U+D, then use A/C to change pen size
-Hold A+C, then use U/D to change color
+1. A/C/U/D to move cursor
+2. B to draw
+3. To erase, just don't press B
+4. Hold U+D, then use A/C to change pen size
+5. Hold A+C, then use U/D to change color
 
 Current Version(1.0)
 It works and you can draw :)
