@@ -1,6 +1,17 @@
 # tufty2350-apps
 Any apps I make for the tufty 2350 will be placed in here.
 
+# Paint
+A basic drawing app.
+Controls:
+A/C/U/D to move cursor
+B to draw
+To erase, just don't press B
+Hold U+D, then use A/C to change pen size
+Hold A+C, then use U/D to change color
+
+Current Version(1.0)
+It works and you can draw :)
 # Video Player
 This allows you to play videos on your Tufty. 
 PLEASE COMPLETLY READ THE FOLLOWING INSTRUCTIONS!
