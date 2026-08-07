@@ -1,6 +1,6 @@
 # tufty2350-apps
 Any apps I make for the tufty 2350 will be placed in here.
-PLEASE NOTE: IF YOU HAVE UPDATED TO OS V3.0, THESE APPS WILL NOT WORK!
+Note that due to major changes introduced with each update, make sure you are on BadgeOS V3.0.0
 
 # Thermometer
 A thermometer
@@ -8,7 +8,10 @@ Uses the RP2350's built in thermometer to measure the temperature without needin
 Note that both the RP2350 and Tufty's screen, battery, and USB port all create heat and therefore will cause the readings to be skewed.
 Use A and B buttons to switch between Celsius and Fahrenheit
 
-Current Version(1.0)
+Current Version(1.1)
+Now works on BadgeOS V3.0.0
+
+Previous Version(1.0)
 Nothing fancy
 # Paint
 A basic drawing app.
@@ -40,20 +43,28 @@ PLEASE COMPLETLY READ THE FOLLOWING INSTRUCTIONS!
 13. additional customization can be done within this file, however they are not required.
 14. eject the TUFTY drive and open the video_player app, the video should start playing
 
-Current Version(1.2):
+Current Version(1.3):
+Now works on BadgeOS V3.0.0
+FPS is greatly improved
+
+Previous Version(1.2):
 Now the text "Paused" and "Rewind" will show when doing the corresponding action.
 When rewinding you now have to hold down C, and therefore you can choose how much to rewind.
 
-Previous version(1.1):
+Old version(1.1):
 You can now press B to pause, A to unpause, and C to restart video
 
 Old version(1.0):
 It now works but you can't pause the video. You can only have one video at a time.
 # Timer
 This is a basic tool which has a stopwatch and timer.
+Note that this is not extremely accurate and will drift by a few seconds if you run it for long enough.
 
-Current version(1.1):
+Current Version(1.2):
+Now works on BadgeOS V3.0.0
+
+Previous version(1.1):
 Timer is now functioning, needs UI improvements
 
-Preivous verison(1.0):
+Old verison(1.0):
 Stopwatch is now fully functional, timer still shows blank screen
