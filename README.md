@@ -3,7 +3,7 @@ Any apps I make for the tufty 2350 will be placed in here.
 Note that due to major changes introduced with each update, make sure you are on BadgeOS V3.0.0
 
 # Thermometer
-A thermometer
+A thermometer.
 Uses the RP2350's built in thermometer to measure the temperature without needing external sensors.
 Note that both the RP2350 and Tufty's screen, battery, and USB port all create heat and therefore will cause the readings to be skewed.
 Use A and B buttons to switch between Celsius and Fahrenheit
