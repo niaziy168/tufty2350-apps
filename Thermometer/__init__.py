@@ -3,7 +3,7 @@ import time
 
 u = "f"
 
-screen.font = rom_font.ignore
+screen.font = font.ignore
 screen.pen = color.rgb(255, 255, 255)
 
 sensor_temp = machine.ADC(machine.ADC.CORE_TEMP)
