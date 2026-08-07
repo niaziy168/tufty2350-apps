@@ -13,14 +13,14 @@ else:
     badge.mode(LORES)
 
 image_number = 1
-image_count = 25 #change this to how many images are in your video
+image_count = 300 #change this to how many images are in your video
 pause = 0
 blinkeffectcounter = 0
 
 if res == 'high':
-    font = rom_font.ignore
+    font = font.ignore
 else:
-    font = rom_font.nope
+    font = font.nope
 
 image = image.load(f"/system/apps/video_player/images/ezgif-frame-{image_number:03d}.png")
 
