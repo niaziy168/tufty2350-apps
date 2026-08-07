@@ -1,6 +1,6 @@
 import time
 
-screen.font = rom_font.nope
+screen.font = font.nope
 
 action = "menu"
 
@@ -104,7 +104,7 @@ def update():# clear the framebuffer
                 time.sleep(0.25)
                 screen.pen = color.rgb(255,0,0)
                 screen.clear()
-            time.sleep(0.98)
+            time.sleep(0.99)
         
             
     if action == "stopwatch":
@@ -149,7 +149,7 @@ def update():# clear the framebuffer
             screen.text(str(stopwatchs), 30, 30)
             screen.text(str(stopwatchms), 50, 30)
             
-            time.sleep(0.0725)
+            time.sleep(0.083)
             
             stopwatchms = stopwatchms + 1
             
