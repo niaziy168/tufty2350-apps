@@ -2,16 +2,22 @@
 Any apps I make for the tufty 2350 will be placed in here.
 Note that due to major changes introduced with each update, make sure you are on BadgeOS V3.0.0
 
+#Tennis For Two
+The Tufty's built-in tennis app but two player. I did not make this entire app, I only edited to make it multiplayer.
+
+Current Version(1.0):
+Initial Release
+
 # Thermometer
 A thermometer.
 Uses the RP2350's built in thermometer to measure the temperature without needing external sensors.
 Note that both the RP2350 and Tufty's screen, battery, and USB port all create heat and therefore will cause the readings to be skewed.
 Use A and B buttons to switch between Celsius and Fahrenheit
 
-Current Version(1.1)
+Current Version(1.1):
 Now works on BadgeOS V3.0.0
 
-Previous Version(1.0)
+Previous Version(1.0):
 Nothing fancy
 # Paint
 A basic drawing app.
@@ -22,7 +28,7 @@ Controls:
 4. Hold U+D, then use A/C to change pen size
 5. Hold A+C, then use U/D to change color
 
-Current Version(1.0)
+Current Version(1.0):
 It works and you can draw :)
 # Video Player
 This allows you to play videos on your Tufty. 
