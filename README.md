@@ -2,7 +2,7 @@
 Any apps I make for the tufty 2350 will be placed in here.
 Note that due to major changes introduced with each update, make sure you are on BadgeOS V3.0.0
 
-#Tennis For Two
+# Tennis For Two
 The Tufty's built-in tennis app but two player. I did not make this entire app, I only edited to make it multiplayer.
 
 Current Version(1.0):
