@@ -50,7 +50,7 @@ PLEASE COMPLETLY READ THE FOLLOWING INSTRUCTIONS!
 14. eject the TUFTY drive and open the video_player app, the video should start playing
 
 Current Version(1.3):
-Now works on BadgeOS V3.0.0
+Now works on BadgeOS V3.0.0,
 FPS is greatly improved
 
 Previous Version(1.2):
