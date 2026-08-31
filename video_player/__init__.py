@@ -5,7 +5,7 @@
 
 import time
 
-res = 'high'#change this to low if your video is less than 160x120, to get WAY better fps
+res = 'low'#change this to low if your video is less than 160x120, to get WAY better fps, change to high otherwise
 
 if res == 'high':
     badge.mode(HIRES)
@@ -13,9 +13,10 @@ else:
     badge.mode(LORES)
 
 image_number = 1
-image_count = 300 #change this to how many images are in your video
+image_count = 20 #change this to how many images are in your video
 pause = 0
 blinkeffectcounter = 0
+bar = 1 #show progress bar
 
 if res == 'high':
     font = font.ignore
@@ -25,7 +26,7 @@ else:
 image = image.load(f"/system/apps/video_player/images/ezgif-frame-{image_number:03d}.png")
 
 def update():
-    global image_number, image, image_count, pause, blinkeffectcounter
+    global image_number, image, image_count, pause, blinkeffectcounter,bar
     
 
     # Try to load the current image
@@ -33,11 +34,14 @@ def update():
         
     screen.blit(image, vec2(0, 0))# if the video is not centered on the screen change these numbers (default is 0,0)
         
-    time.sleep(0) #change this to slow the fps, however the Tufty update speed is not very fast anyways
+    time.sleep(0) #change this to slow the fps, however the Tufty update speed is not very fast anyways- 0.147 = ~5fps
     
 
     if badge.pressed(BUTTON_A):
-        pause = 0
+        if bar == 1:
+            bar = 0
+        else:
+            bar = 1
     
     if pause == 0:
         image_number = image_number+1
@@ -50,10 +54,13 @@ def update():
 
     
     if badge.pressed(BUTTON_B):
-        pause = 1
-        screen.pen = color.white
-        screen.font = font
-        screen.text('PAUSED', 10, 10)
+        if pause == 0:
+            pause = 1
+            screen.pen = color.white
+            screen.font = font
+            screen.text('PAUSED', 10, 10)
+        else:
+            pause = 0
     
     if badge.held(BUTTON_C):
         image_number = image_number - 5
@@ -66,6 +73,19 @@ def update():
     
     if image_number > image_count:
         image_number = 1
+    
+    screen.pen = color.rgb(0,50,150)
+    if bar == 1:
+        if res == 'high':
+            percent = (image_number/image_count)
+            barprog = percent*316
+            progress = shape.line(2,236,barprog+2,236,4)
+            screen.shape(progress)
+        else:
+            percent = (image_number/image_count)
+            barprog = percent*158
+            progress = shape.line(1,118,barprog+1,118,2)
+            screen.shape(progress)
 
 
 run(update)
