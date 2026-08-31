@@ -49,11 +49,14 @@ PLEASE COMPLETLY READ THE FOLLOWING INSTRUCTIONS!
 13. additional customization can be done within this file, however they are not required.
 14. eject the TUFTY drive and open the video_player app, the video should start playing
 
-Current Version(1.3):
+Current Version(1.4):
+Adds progress bar
+
+Previous Version(1.3):
 Now works on BadgeOS V3.0.0,
 FPS is greatly improved
 
-Previous Version(1.2):
+Old Version(1.2):
 Now the text "Paused" and "Rewind" will show when doing the corresponding action.
 When rewinding you now have to hold down C, and therefore you can choose how much to rewind.
 
