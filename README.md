@@ -2,8 +2,14 @@
 Any apps I make for the tufty 2350 will be placed in here.
 Note that due to major changes introduced with each update, make sure you are on BadgeOS V3.0.0
 
+# Clones
+A Tower Defense game for the Tufty 2350. A gradually increasing swarm of dots spawns from the left edge of the screen. If they cross the right edge then you lose hp. Press B to open the menu, then B again on the icon for the tower you want to place. Position it where you want it and then press B to place.
+
+Current Version(1.0):
+Initial Release
+
 # Tennis For Two
-The Tufty's built-in tennis app but two player. I did not make this entire app, I only edited to make it multiplayer.
+The Tufty's tennis app but two player. I did not make this entire app, I only edited to make it multiplayer.
 
 Current Version(1.0):
 Initial Release
