@@ -2,6 +2,9 @@
 Any apps I make for the tufty 2350 will be placed in here.
 Note that due to major changes introduced with each update, make sure you are on BadgeOS V3.0.0
 
+# Blast Wars
+An unfinished game. You can run it if you want.
+
 # Clones
 A Tower Defense game for the Tufty 2350. A gradually increasing swarm of dots spawns from the left edge of the screen. If they cross the right edge then you lose hp. Press B to open the menu, then B again on the icon for the tower you want to place. Position it where you want it and then press B to place.
 
